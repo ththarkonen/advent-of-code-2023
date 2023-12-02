@@ -77,7 +77,7 @@ def getMinimumCubesNeeded( games ):
 
     return minimums
 
-def computeGamePower( minimums ):
+def computeGamePowers( minimums ):
 
     gamePowers = []
 

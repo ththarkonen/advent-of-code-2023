@@ -12,16 +12,13 @@ cubeLimits["blue"] = 14
 cubeGames = cubelib.parseData( lines )
 possibleCubeGames = cubelib.getPossibleGames( cubeGames, cubeLimits)
 minimumCubesNeeded = cubelib.getMinimumCubesNeeded( cubeGames )
-gamePowers = cubelib.computeGamePower( minimumCubesNeeded )
+gamePowers = cubelib.computeGamePowers( minimumCubesNeeded )
 
 totalID = 0
-totalPower = 0
+totalPower = sum( gamePowers )
 
 for possibleGame in possibleCubeGames:
     totalID = totalID + possibleGame["id"]
-
-for gamePower in gamePowers:
-    totalPower = totalPower + gamePower
 
 print( totalID )
 print( totalPower )
