@@ -64,6 +64,7 @@ def parseMaps( lines ):
     maps[ sourceName ] = map
     return seeds, maps
 
+
 def computeSeedRanges( seeds ):
 
     nSeeds = len( seeds )
@@ -166,6 +167,7 @@ def addCut( seedRange, mappings):
     newSeedRanges = [ seedMin, seedMax]
     return ( newSeedRanges, wasCut)
 
+
 def computeNewSeedRanges( seedRanges, mappings):
 
     nSeedRanges = len( seedRanges )
@@ -190,6 +192,7 @@ def computeNewSeedRanges( seedRanges, mappings):
 
     return newSeedRanges
 
+
 def computeSeedRangeInfo( seedRanges, maps):
 
     states = seedRanges.copy()
@@ -213,8 +216,6 @@ def computeSeedRangeInfo( seedRanges, maps):
         source = destination
 
     return infos
-
-    
 
 
 def computeSeedInfo( seeds, maps):
