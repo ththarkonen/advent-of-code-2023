@@ -1,6 +1,5 @@
 
 from collections import deque
-import math
 
 def parseMap( lines ):
 
