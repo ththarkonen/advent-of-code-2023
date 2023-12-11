@@ -46,7 +46,7 @@ def computeDistances( galaxyIndsII, galaxyIndsJJ):
     nGalaxies = len( galaxyIndsII )
 
     for ii in range( nGalaxies ):
-        for jj in range( ii + 1, nGalaxies ):
+        for jj in range( ii + 1, nGalaxies):
 
             x0 = galaxyIndsJJ[ii]
             x1 = galaxyIndsJJ[jj]
