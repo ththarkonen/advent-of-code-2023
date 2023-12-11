@@ -43,7 +43,6 @@ def parse( lines, expansionRate):
 def computeDistances( galaxyIndsII, galaxyIndsJJ):
 
     distances = []
-
     nGalaxies = len( galaxyIndsII )
 
     for ii in range( nGalaxies ):
