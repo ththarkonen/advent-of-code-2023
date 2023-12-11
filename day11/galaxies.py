@@ -18,8 +18,8 @@ def parse( lines, expansionRate):
     emptyRowsBool = ~galaxyMapInitial.any( axis = 1 )
     emptyColsBool = ~galaxyMapInitial.any( axis = 0 )
 
-    emptyRowInds = np.where( emptyRowsBool )[0]
-    emptyColInds = np.where( emptyColsBool )[0]
+    emptyRowInds = np.where( emptyRowsBool )
+    emptyColInds = np.where( emptyColsBool )
 
     galaxyInds = np.where( galaxyMapInitial == 1 )
     galaxyRowInds = galaxyInds[0]
