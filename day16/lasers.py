@@ -60,8 +60,8 @@ def trace( components, nRows, nCols, start, startDirection):
     nextLasers = [ start ]
     nextLaserDirections = [ startDirection ]
 
-    energizedLocations = [(0,0)]
-    energizedData = [(0,0,0,1)]
+    energizedLocations = [ start ]
+    energizedData = [ ( start[0], start[1], startDirection[0], startDirection[1]) ]
     newLocations = True
 
     while newLocations:
@@ -104,7 +104,7 @@ def trace( components, nRows, nCols, start, startDirection):
                 nextLaserDirections.append( dir )
                 newLocations = True
 
-    return len( energizedLocations )
+    return energizedLocations
 
 
 
